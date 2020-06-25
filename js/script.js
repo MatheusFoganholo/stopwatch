@@ -2,19 +2,23 @@ var milliseconds = 0;
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
+const getStartTimer = document.getElementById("startTimer");
+const getPauseTimer = document.getElementById("pauseTimer");
+const getContinueTimer =  document.getElementById("continueTimer");
+const getRestartTimer = document.getElementById("restartTimer");
 
 function startTimer () {
     control = setInterval(cronometro,10);
-    document.getElementById("startTimer").disabled = true;
-    document.getElementById("pauseTimer").disabled = false;
-    document.getElementById("continueTimer").disabled = true;
-    document.getElementById("restartTimer").disabled = false;
+    getStartTimer.disabled = true;
+    getPauseTimer.disabled = false;
+    getContinueTimer.disabled = true;
+    getRestartTimer.disabled = false;
 }
 
 function pauseTimer () {
     clearInterval(control);
-    document.getElementById("pauseTimer").disabled = true;
-    document.getElementById("continueTimer").disabled = false;
+    getPauseTimer.disabled = true;
+    getContinueTimer.disabled = false;
 }
 
 function restartTimer () {
@@ -27,10 +31,10 @@ function restartTimer () {
     Seconds.innerHTML = ":00";
     Minutes.innerHTML = ":00";
     Hours.innerHTML = "00";
-    document.getElementById("startTimer").disabled = false;
-    document.getElementById("pauseTimer").disabled = true;
-    document.getElementById("continueTimer").disabled = true;
-    document.getElementById("restartTimer").disabled = true;
+    getStartTimer.disabled = false;
+    getPauseTimer.disabled = true;
+    getContinueTimer.disabled = true;
+    getRestartTimer.disabled = true;
 }
 function cronometro () {
     if (milliseconds < 99) {
