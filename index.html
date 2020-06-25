@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronômetro</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container">
-    </div><!--container-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Cronômetro (Timer)</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Cronômetro</h1>
+            <div id="timer-area">
+                <img alt="Timer/Cronômetro" src="img/timer.png">
+                <input type="button" id="startTimer" value="Iniciar" onclick="startTimer()">
+                <input type="button" id="pauseTimer" value="Pausar" onclick="pauseTimer()" disabled>
+                <input type="button" id="continueTimer" value="Continuar" onclick="startTimer()" disabled>
+                <input type="button" id="restartTimer" value="Reiniciar" onclick="restartTimer()" disabled>
 
-    <!-- Javascript -->
-    <script src="js/script.js"></script>
-</body>
+                <p id="timer-text">
+                    <span id="Hours">00</span>
+                    <span id="Minutes">:00</span>
+                    <span id="Seconds">:00</span>
+                    <span id="Milliseconds">:00</span>
+                </p>
+
+            </div>
+        </div>
+
+       <script type="text/javascript" src="js/script.js"></script>
+    </body>
 </html>
