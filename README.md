@@ -1,4 +1,4 @@
 # cronometro-basico
-This is a repository that I created to put the project of a simple stopwatch (timer), which I did while studying Javascript from "Origamid" course.
+A simple stopwatch created to test my knowledge and the evolution of my learning while studying Javascript.
 ~~~
-Esse é um repositório que criei para colocar um projeto que gostei muito de ter realizado, um simples cronômetro que criei com o aprendizado do curso de Javascript da @origamid.
+Um simples crônometro criado para testar os meus conhecimentos e a evolução do meu aprendizado enquanto estudava Javascript.
